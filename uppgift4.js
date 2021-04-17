@@ -23,3 +23,30 @@ console.log(nummer);
 
 
 /* FORTSÄTT MED EGEN KOD HÄR */
+var dinNummer = prompt("Type a number between 0--10.");
+if (dinNummer < nummer) {
+    alert("It\'s too small");
+    dinNummer = prompt("Try again. Type a number between 0--10.");
+    if (dinNummer == nummer) {
+        alert("You are right!");
+    }else{
+        alert("Game over!");
+    }
+} else if (dinNummer > nummer) {
+    alert("It\'s too big");
+    dinNummer = prompt("Try again. Type a number between 0--10.");
+    if (dinNummer == nummer) {
+        alert("You are right!");
+    }else{
+        alert("Game over!");
+    }
+} else if (dinNummer == nummer) {
+    alert("You are right!");
+} else{
+    dinNummer = prompt("Try again. Type a number between 0--10.");
+    if (dinNummer == nummer) {
+        alert("You are right!");
+    }else{
+        alert("Game over!");
+    }
+}
